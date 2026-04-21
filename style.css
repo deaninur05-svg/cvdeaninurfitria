@@ -1,13 +1,13 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(135deg, #e3f2fd, #f4f4f4);
+    background: linear-gradient(135deg, #e2e2e2, #cfcfcf);
     text-align: center;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #333;
+    background: #8f8f8f;
     color: white;
     padding: 10px 20px;
     position: sticky;
@@ -38,12 +38,13 @@ body {
 }
 
 .nav-menu li a:hover {
-    background: #555;
+    background: #757575;
 }
 
 .nav-menu li a.active {
-    background: #00bcd4;
-    box-shadow: 0 0 10px rgba(0,188,212,0.5);
+    background: #5f5f5f;
+    color: white;
+    box-shadow: 0 0 10px rgba(90,90,90,0.5);
 }
 
 /* HAMBURGER */
@@ -51,6 +52,7 @@ body {
     display: none;
     font-size: 26px;
     cursor: pointer;
+    color: white;
 }
 
 /* CONTENT */
@@ -60,12 +62,12 @@ body {
 
 /* CARD */
 .card {
-    background: white;
+    background: #f7f7f7;
     padding: 25px;
     border-radius: 20px;
     margin: 20px auto;
     max-width: 420px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
     animation: fadeIn 0.6s ease-in-out;
     transition: 0.3s;
 }
@@ -80,8 +82,8 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #00bcd4;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 4px solid #8f8f8f;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
     transition: 0.3s;
 }
 
@@ -111,7 +113,7 @@ body {
     text-align: center !important;
     margin-top: 5px;
     font-size: 14px;
-    color: #888;
+    color: #666;
     letter-spacing: 2px;
 }
 
@@ -128,24 +130,21 @@ body {
     color: #444;
 }
 
-/* ========================= */
-/* 🔥 FORM (CONTACT) */
-/* ========================= */
-
+/* FORM */
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #bbb;
     outline: none;
     transition: 0.3s;
     font-size: 14px;
 }
 
 input:focus, textarea:focus {
-    border-color: #00bcd4;
-    box-shadow: 0 0 6px rgba(0,188,212,0.4);
+    border-color: #777;
+    box-shadow: 0 0 6px rgba(120,120,120,0.4);
 }
 
 textarea {
@@ -160,7 +159,7 @@ button {
     margin-top: 15px;
     border: none;
     border-radius: 10px;
-    background: #00bcd4;
+    background: #6f6f6f;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -168,7 +167,7 @@ button {
 }
 
 button:hover {
-    background: #0097a7;
+    background: #555;
     transform: scale(1.02);
 }
 
@@ -203,7 +202,7 @@ button:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #444;
+        background: #9a9a9a;
         margin-top: 10px;
         border-radius: 10px;
         padding: 10px 0;

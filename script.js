@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-    // =========================
-    // 🔥 LOAD PAGE (SPA)
-    // =========================
+  
     function loadPage(page){
         $("#content").fadeOut(200, function(){
             $("#content").load(page, function(){
@@ -18,12 +16,10 @@ $(document).ready(function(){
         });
     }
 
-    // load pertama
+   
     loadPage("home.html");
 
-    // =========================
-    // 🔥 NAVIGATION CLICK
-    // =========================
+    
     $(".nav-menu a").click(function(e){
         e.preventDefault();
 
