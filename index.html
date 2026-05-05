@@ -5,8 +5,13 @@
 <title>CV SPA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8f8f8f">
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -17,15 +22,15 @@
 
         <div class="menu-toggle" id="menu-toggle">☰</div>
 
-       <ul class="nav-menu" id="nav-menu">
-    <li><a href="#" data-page="home.html">Home</a></li>
-    <li><a href="#" data-page="about.html">About</a></li>
-    <li><a href="#" data-page="skills.html">Skills</a></li>
-    <li><a href="#" data-page="education.html">Education</a></li>
-    <li><a href="#" data-page="experience.html">Experience</a></li>
-    <li><a href="#" data-page="portfolio.html">Portfolio</a></li>
-    <li><a href="#" data-page="certificate.html">Certificate</a></li>
-    <li><a href="#" data-page="contact.html">Contact</a></li>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#" data-page="home.html">Home</a></li>
+            <li><a href="#" data-page="about.html">About</a></li>
+            <li><a href="#" data-page="skills.html">Skills</a></li>
+            <li><a href="#" data-page="education.html">Education</a></li>
+            <li><a href="#" data-page="experience.html">Experience</a></li>
+            <li><a href="#" data-page="portfolio.html">Portfolio</a></li>
+            <li><a href="#" data-page="certificate.html">Certificate</a></li>
+            <li><a href="#" data-page="contact.html">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -33,6 +38,24 @@
 <div id="content"></div>
 
 <script src="script.js"></script>
+
+<!-- REGISTER SERVICE WORKER -->
+<script>
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker
+        .register("sw.js")
+
+        .then(function(){
+            console.log("Service Worker berhasil");
+        })
+
+        .catch(function(error){
+            console.log("SW gagal", error);
+        });
+
+}
+</script>
 
 </body>
 </html>
