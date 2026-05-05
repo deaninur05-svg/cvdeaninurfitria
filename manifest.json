@@ -1,22 +1,26 @@
 {
   "name": "CV Deani",
-  "short_name": "CV",
-  "start_url": "./index.html",
+  "short_name": "Deani CV",
+  "description": "Portfolio dan CV Online Deani",
+  "start_url": "index.html",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#cfcfcf",
   "theme_color": "#8f8f8f",
 
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "icone.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
 
     {
-      "src": "icon-512.png",
+      "src": "icone.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
